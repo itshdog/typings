@@ -11,8 +11,9 @@ body {
 }
 
 .navbar {
-  padding: 1em 0 !important; 
+  margin-top: 1em !important; 
   border-radius: 1em !important;
+  padding-left: 0.5em;
 }
 
 *[onclick] {
@@ -35,7 +36,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transform: translateY(-25vh);
+  transform: translateY(-17vh);
 }
 
 #theme-area{
