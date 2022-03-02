@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  min-height: 100vh;
+  min-height: 75vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,7 +35,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transform: translateY(-2vh);
+  transform: translateY(-12vh);
 }
 
 #theme-area{
