@@ -7,7 +7,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  font-family: Roboto Mono;
   line-height: 1.6rem;
 }
 
@@ -152,5 +151,9 @@ body {
 body, #header, #left-wing, #right-wing, #typing-area, #theme-area, #theme-center,
 #text-display, #redo-button, #footer, #highlight {
   transition: all .4s ease-in-out 0s;
+}
 
+#word-count span {
+  background: rgba(0,0,0,0.15);
+  border-radius: 1em;
 }
