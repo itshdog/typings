@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  min-height: 75vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,9 +10,9 @@ body {
   line-height: 1.6rem;
 }
 
-header {
-  padding: 0 1em; 
-  border-radius: 1em;
+.navbar {
+  padding: 1em 0 !important; 
+  border-radius: 1em !important;
 }
 
 *[onclick] {
@@ -35,7 +35,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transform: translateY(-12vh);
+  transform: translateY(-25vh);
 }
 
 #theme-area{
