@@ -48,7 +48,6 @@ function setText() {
           wordList.push(randomWord);
         }
       }
-    }
     break;
 
     case 'time':
