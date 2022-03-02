@@ -29,14 +29,24 @@ body {
   margin: 0;
 }
 
-#command-center, #theme-center, #config-center{
+#command-center {
   margin: 0 0.4rem;
   width: 100%;
   max-width: 40rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transform: translateY(-17vh);
+  transform: translateY(-15vh);
+}
+
+#theme-center, #config-center {
+  margin: 0 0.4rem;
+  width: 100%;
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateY(-2vh);
 }
 
 #theme-area{
