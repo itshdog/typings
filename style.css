@@ -39,6 +39,14 @@ body {
   transform: translateY(-2vh);
 }
 
+#command-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 #theme-area{
   margin-top: 1rem;
   padding: 1.4rem 1rem;
