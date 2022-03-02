@@ -10,6 +10,11 @@ body {
   line-height: 1.6rem;
 }
 
+header {
+  padding: 0 1em; 
+  border-radius: 1em;
+}
+
 *[onclick] {
   cursor: pointer;
 }
@@ -161,4 +166,22 @@ body, #header, #left-wing, #right-wing, #typing-area, #theme-area, #theme-center
 
 #wing-title {
   background: none;
+}
+
+.navbar {
+    background:rgba(0,0,0,0.25);
+}
+.nav-link,
+.navbar-brand {
+    color: #fff;
+    cursor: pointer;
+}
+.nav-link {
+    margin-right: 1em !important;
+}
+.nav-link:hover {
+    color: #000;
+}
+.navbar-collapse {
+    justify-content: flex-end;
 }
