@@ -134,11 +134,11 @@ body {
   font: inherit;
   padding: 0.4rem 1rem;
   border-radius: 0.2rem;
-  font-size: 1.2rem;
+  font-size: 2em;
   cursor: pointer;
 
   background: transparent !important;
-  color:rgba(255, 255, 255, 0.2);
+  color:white;
 }
 
 #footer {
@@ -196,4 +196,51 @@ body, #header, #left-wing, #right-wing, #typing-area, #theme-area, #theme-center
 }
 .navbar-collapse {
     justify-content: flex-end;
+}
+
+/* Footer */
+
+footer {
+    margin: 5em auto 2em auto;
+    padding-left: 1em;
+    width: 100%;
+    max-width: 1800px;
+    color: var(--text-color);
+    display: flex;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+footer a:hover {
+  color: var(--text-color);
+}
+
+#footer-left {
+    opacity: 1;
+    float: left;
+    text-align: left;
+    font-size: 0.85em;
+    width: 100%;
+}
+
+#footer-left .clickButton {
+    padding: 0.2em 0.5em;
+    color: var(--sub-color);
+    font-weight: 500;
+    transition: 1s;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#footer-left .clickButton:hover {
+    color: var(--button-color);
+    transform: translateY(-3px);
+    transition: 0.5s;
+}
+
+#clickButtonTheme i {
+    padding-right: 0.25em;
 }
