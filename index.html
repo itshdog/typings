@@ -22,27 +22,7 @@
     <link id="theme" rel="stylesheet" href="themes/light.css" />
     <script src="https://kit.fontawesome.com/f4732725b7.js" crossorigin="anonymous"></script>
   </head>
-  <header class="page-header header container-fluid" style="z-index: 1000;">
-    <nav class="navbar navbar-expand-md">
-      <a class="navbar-brand" href="#">Typings</a>
-      <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="main-navigation">
-        <ul class="navbar-nav">
-          <li class="nav- active">
-            <a class="nav-link" href="#">Test</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="itshdog.com">Portfolio</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+
   <body>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -53,11 +33,23 @@
 
     <h2 id="header"></h2>
     <div id="command-center" class="">
+      <h2 id="header">
+        <span class="letter">T</span>
+        <span class="letter">y</span>
+        <span class="letter">p</span>
+        <span class="letter">i</span>
+        <span class="letter">n</span>
+        <span class="letter">g</span>
+        <span class="space"></span>
+        <span class="letter lT">T</span>
+        <span class="letter">e</span>
+        <span class="letter">s</span>
+        <span class="letter">t</span>
+      </h2>
       <div class="bar">
         <div id="left-wing">
-
           <span id="word-count">
-            <span class="wing-title">word:</span>
+            <span class="wing-title">Word Count:</span>
             <span id="wc-10" onclick="setWordCount(10)">10</span>
             <span id="wc-25" onclick="setWordCount(25)">25</span>
             <span id="wc-50" onclick="setWordCount(50)">50</span>
@@ -65,15 +57,15 @@
             <span id="wc-250" onclick="setWordCount(250)">250</span>
           </span>
           <span id="time-count">
-            <span class="wing-title">time:</span>
-            <span id="tc-15" onclick="setTimeCount(15)">15</span>
-            <span id="tc-30" onclick="setTimeCount(30)">30</span>
-            <span id="tc-60" onclick="setTimeCount(60)">60</span>
-            <span id="tc-120" onclick="setTimeCount(120)">120</span>
-            <span id="tc-240" onclick="setTimeCount(240)">240</span>
+            <span class="wing-title">Timespan:</span>
+            <span id="tc-15" onclick="setTimeCount(15)">15s</span>
+            <span id="tc-30" onclick="setTimeCount(30)">30s</span>
+            <span id="tc-60" onclick="setTimeCount(60)">1m</span>
+            <span id="tc-120" onclick="setTimeCount(120)">2m</span>
+            <span id="tc-240" onclick="setTimeCount(240)">4m</span>
           </span>
         </div>
-        <div id="right-wing">wpm: XX / acc: XX</div>
+        <div id="right-wing"></div>
       </div>
       <div id="typing-area">
         <div id="text-display"></div>
@@ -84,16 +76,28 @@
           </button>
         </div>
       </div>
+      <div id="footer-left">
+        <!-- Open Contact Page // Utilizes blur.js -->
+        <div class="clickButton" onClick="showConfigCenter();">
+          <i class="fas fa-sliders-h"></i>
+          Settings
+        </div>
+      </div>
     </div>
     <div id="theme-center" class="hidden">
-      <div id="left-wing" onClick="hideThemeCenter();"><i class="fas fa-angle-double-left"></i></div>
+      <div id="left-wing" onClick="hideThemeCenter();">
+        <i class="fas fa-angle-double-left"></i>
+      </div>
       <div id="theme-area"></div>
     </div>
     <div id="config-center" class="hidden">
-      <div id="left-wing" onClick="hideConfigCenter();"><i class="fas fa-angle-double-left"></i></div>
+      <h2 id="header">Settings</h2>
       <div id="config-area" class="theme-bg theme-text">
+        <div id="left-wing" onClick="hideConfigCenter();">
+          <i class="fas fa-angle-double-left"></i>
+        </div>
         <div class="config-group">
-          <div class="title">test mode:</div>
+          <div class="title">Test Mode:</div>
           <div class="button-group">
             <div class="button" id="typingMode-time" onclick="setTypingMode('time')">time</div>
             <div class="separator">/</div>
@@ -101,7 +105,7 @@
           </div>
         </div>
         <div class="config-group">
-          <div class="title">punctuation:</div>
+          <div class="title">Punctuation:</div>
           <div class="button-group">
             <div class="button" id="punctuation-true" onclick="setPunctuation('true')">true</div>
             <div class="separator">/</div>
@@ -109,7 +113,7 @@
           </div>
         </div>
         <div class="config-group">
-          <div class="title">language:</div>
+          <div class="title">Language:</div>
           <div class="button-group" id="languages">
           </div>
         </div>
@@ -118,21 +122,6 @@
 
     <footer>
       <div id="footer-left">
-        <!-- Open Contact Page // Utilizes blur.js -->
-        <div class="clickButton" onClick="showConfigCenter();">
-          <i class="fas fa-sliders-h"></i>
-          Settings
-        </div>
-        <div class="clickButton" id="clickButtonTheme" onClick="showThemeCenter()">
-          <i class="fas fa-palette"></i>
-          Theme
-        </div>
-        <a href="https://github.com/briano1905/typings#typings" target="_blank">
-            <div class="clickButton" onclick="contactOpen()">
-              <i class="fas fa-question-circle"></i>
-              User Guide
-            </div>
-        </a>
       </div>
     </footer>
     <script src="main.js"></script>

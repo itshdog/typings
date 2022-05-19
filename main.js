@@ -52,7 +52,7 @@ function setText() {
 
     case 'time':
     textDisplay.style.height = '3.2rem';
-    document.querySelector(`#tc-${timeCount}`).innerHTML = timeCount;
+    document.querySelector(`#tc-${timeCount}`).innerHTML = timeCount + "s";
     textDisplay.innerHTML = '';
     wordList = [];
     for (i = 0; i < 500; i++) {
@@ -144,7 +144,7 @@ inputField.addEventListener('keydown', e => {
       }
       function startTimer(time) {
         if (time > 0) {
-          document.querySelector(`#tc-${timeCount}`).innerHTML = time;
+          document.querySelector(`#tc-${timeCount}`).innerHTML = time + 's';
           timer = setTimeout(() => {
             time--;
             startTimer(time);
@@ -153,7 +153,7 @@ inputField.addEventListener('keydown', e => {
           timerActive = false;
           textDisplay.style.display = 'none';
           inputField.className = '';
-          document.querySelector(`#tc-${timeCount}`).innerHTML = timeCount;
+          document.querySelector(`#tc-${timeCount}`).innerHTML = timeCount + 's';
           showResult();
         }
       }
@@ -336,8 +336,8 @@ function setPunctuation(_punc) {
 function setWordCount(wc) {
   setCookie('wordCount', wc, 90);
   wordCount = wc;
-  document.querySelectorAll('#word-count > span').forEach(e => (e.style.borderBottom = ''));
-  document.querySelector(`#wc-${wordCount}`).style.borderBottom = '2px solid';
+  document.querySelectorAll('#word-count > span').forEach(e => (e.style.border = ''));
+  document.querySelector(`#wc-${wordCount}`).style.border = '2px solid';
   setText();
 }
 
@@ -345,11 +345,11 @@ function setTimeCount(tc) {
   setCookie('timeCount', tc, 90);
   timeCount = tc;
   document.querySelectorAll('#time-count > span').forEach(e => {
-    e.style.borderBottom = '';
-    e.innerHTML = e.id.substring(3, 6);
+    e.style.border = '';
+    e.innerHTML = e.id.substring(3, 6) + 's';
   });
-  document.querySelector('#time-count .wing-title').innerText = 'time:';
-  document.querySelector(`#tc-${timeCount}`).style.borderBottom = '2px solid';
+  document.querySelector('#time-count .wing-title').innerText = 'Timespan:';
+  document.querySelector(`#tc-${timeCount}`).style.border = '2px solid';
   setText();
 }
 
