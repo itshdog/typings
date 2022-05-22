@@ -6,56 +6,15 @@ Light Blue:  #a2aebd
 Pink:        #f44c7f
 */
 
-body {
-  background: #3c4756;
-}
+:root {
+  --bg-color: #3c4756;
+  --container-color: #a2aebd;
+  --main-color: #f44c7f;
 
-#header {
-  color: #f44c7f;
-}
+  --text-color: #3c4756;
+  --text-highlight: #f44c7f;
+  --text-correct: #6f7b8a;
+  --text-wrong: #c6262e;
 
-#left-wing {
-  color: #f44c7f;
-}
-
-#right-wing {
-  color: #f44c7f;
-}
-
-#typing-area, #theme-area, .theme-bg{
-  background: #a2aebd;
-}
-
-#text-display, .theme-text{
-  color: #3c4756;
-}
-
-#input-field {
-  background: #adbac9;
-  color: #3c4756;
-}
-
-#input-field.wrong {
-  background: rgba(198, 38, 46, 0.3);
-}
-
-#redo-button {
-  background: #f44c7f;
-  color: #3c4756;
-}
-
-#footer {
-  color: #f44c7f;
-}
-
-.highlight {
-  color: #f44c7f;
-}
-
-.correct {
-  color: #6f7b8a;
-}
-
-.wrong {
-  color: #c6262e;
+  --input-wrong: rgba(198, 38, 46, 0.3);
 }

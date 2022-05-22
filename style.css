@@ -8,7 +8,7 @@ body {
   align-items: center;
   justify-content: space-between;
   line-height: 1.6rem;
-  background: #3c4756;
+  background: var(--bg-color);
 }
 
 header {
@@ -40,14 +40,14 @@ header {
   text-align: center;
 
   color: white!important;
-  text-shadow: 1px 1px #f44c7f, 2px 2px #f44c7f;
+  text-shadow: 1px 1px var(--main-color), 2px 2px var(--main-color);
 }
 
 #nav-title { 
   font-size: 2.5em;
   font-weight: 700;
   color: white;
-  text-shadow: 1px 1px #f44c7f;
+  text-shadow: 1px 1px var(--main-color);
 }
 
 #command-center, #theme-center, #config-center {
@@ -84,6 +84,8 @@ header {
   border-radius: 0.4rem;
   display: grid;
   grid-gap: 1rem;
+
+  background: var(--container-color);
 }
 
 .config-group{
@@ -109,7 +111,7 @@ header {
 
 .button-group .separator{
   margin: 0 0.5rem;
-  color: #f44c7f;
+  color: var(--main-color);
 }
 
 .theme-button{
@@ -127,18 +129,25 @@ header {
 
 /* #left-wing {} */
 
-/* #right-wing {} */
+#left-wing, #right-wing {
+  color: var(--main-color);
+  width: fit-content;
+}
 
 #typing-area {
   margin-top: 1rem;
   padding: 1.4rem 1rem;
   border-radius: 0.4rem;
-  background: #eaeaea;
+  background: var(--container-color);
 }
 
 #text-display {
   margin-bottom: 1rem;
   overflow: hidden;
+}
+
+#text-display, .theme-text{
+  color: var(--text-color);
 }
 
 #input-field {
@@ -148,6 +157,13 @@ header {
   padding: 0.4rem 1rem;
   border-radius: 0.2rem;
   font-size: 1.2rem;
+
+  background: rgba(255, 255, 255, 0.25);
+  color: var(--text-color);
+}
+
+#input-field.wrong {
+  background: var(--input-wrong);
 }
 
 #redo-button {
@@ -160,7 +176,7 @@ header {
   cursor: pointer;
 
   background: transparent !important;
-  color:white;
+  color: var(--bg-color);
 }
 
 #footer {
@@ -262,11 +278,27 @@ body, #header, #left-wing, #right-wing, #typing-area, #theme-area, #theme-center
   margin: 10px;
 }
 
+.highlight {
+  color: var(--text-highlight);
+}
+
+.correct {
+  color: var(--text-correct);
+}
+
+.wrong {
+  color: var(--text-wrong);
+}
+
 /* Footer */
 
 footer {
     margin: 5em auto 2em auto;
     padding-left: 1em;
+}
+
+#footer {
+  color: var(--main-color);
 }
 
 #footer-left {
@@ -279,7 +311,7 @@ footer {
 
 #footer-left .clickButton {
     padding: 0.2em 0.5em;
-    color: #f44c7f;
+    color: var(--main-color);
     font-weight: 500;
     transition: 1s;
     display: inline-block;
