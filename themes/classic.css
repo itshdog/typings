@@ -1,0 +1,12 @@
+:root {
+  --bg-color: #323437;
+  --container-color: rgba(0,0,0,0.15);
+  --main-color: #f05757;
+
+  --text-color: #ffffff;
+  --text-highlight: #f05757;
+  --text-correct: #6f7b8a;
+  --text-wrong: #c6262e;
+
+  --input-wrong: rgba(198, 38, 46, 0.3);
+}
