@@ -158,7 +158,7 @@ header {
   border-radius: 0.2rem;
   font-size: 1.2rem;
 
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.1);
   color: var(--text-color);
 }
 
@@ -176,7 +176,8 @@ header {
   cursor: pointer;
 
   background: transparent !important;
-  color: var(--bg-color);
+  color: var(--text-color);
+  text-shadow: 1px 1px var(--main-color);
 }
 
 #footer {
